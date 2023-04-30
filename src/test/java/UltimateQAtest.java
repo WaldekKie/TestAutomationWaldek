@@ -33,6 +33,12 @@ public class UltimateQAtest extends SetupTest {
 
         WebElement thanksText = driver.findElement(By.xpath("//div[@class='et-pb-contact-message']/p"));
         Assertions.assertEquals("Thanks for contacting us", thanksText.getText());
-    }
 
+//        Assertions.assertTrue();
+       }
+        @Test
+        public void TestThree(){
+            WebElement blueField = driver.findElementByXPath("//*[contains(@class, 'et_pb_module et_pb_cta_0')]");
+            Assertions.assertEquals("rgba(46, 163, 242, 1)", blueField.getCssValue ("background-color"));
+        }
 }
