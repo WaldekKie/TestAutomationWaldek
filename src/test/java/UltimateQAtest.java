@@ -34,7 +34,6 @@ public class UltimateQAtest extends SetupTest {
         WebElement thanksText = driver.findElement(By.xpath("//div[@class='et-pb-contact-message']/p"));
         Assertions.assertEquals("Thanks for contacting us", thanksText.getText());
 
-//        Assertions.assertTrue();
        }
         @Test
         public void TestThree(){
